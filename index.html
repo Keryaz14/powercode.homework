@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/media.css">
+    <script src="/index.js" defer></script>
+    <title>Hospital</title>
+  </head>
+  <body>
+    <div class="first_screen">
+      <div class="container">
+        <header>
+          <h1><span>Hos</span>pital.</h1>
+          <nav>
+            <div class="header-nav">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">Service</a></li>
+              </ul>
+              <div class="btn-nav">
+                <div class="user hidden" id="" >
+                    <span id="user-name"></span>
+                    <button id="sing-out-btn"> sing out</button>
+                </div>
+                <button id="myBtn" class="btn-login">Login</button>
+            </div>
+            <div id="back-drop" class="back-drop">
+                <form  id="open_form" >
+                    <div>
+                        <span id="close" class="close" >&times;</span>
+                    </div>
+                    <h2 class="formh2">Login</h2>
+                    <br>
+                    <div class="modal-social">
+                        <div class="apple-btn">
+                            <a href="https://appleid.apple.com/sign-in" target="_blank" ><img src="/images/modal/apple.png" alt="apple"></a>
+                        </div>
+                        <div class="facebook-btn">
+                            <a href="https://www.facebook.com/?stype=lo&jlou=AffqjN8zibautmEih8c7gOmcIL6qD1_c88zynLXJ-zERrkOU9uQXAxSzr58AWi9QUWYBgUTypr1mne8zkir4kn5ezqlBk07DjdvzQU0xj6HQlw&smuh=62990&lh=Ac_63Hn-Wcxfbu3YZzU" target="_blank"><img src="images/modal/facebook.png" alt="facebook"></a>
+                        </div>
+                        <div class="google-btn">
+                            <a href="https://accounts.google.com/signin/v2/challenge/pwd?continue=https%3A%2F%2Fmyaccount.google.com%2Fdeleteaccount&service=accountsettings&osid=1&rart=ANgoxccv1bE4c8AZo2-4Lxa4titJrIseXSYzOxJ0zChhmYWV-tChz_hflWQ5lwHVuUYnPP3zF9RtmwPAL_fWjA-3DNRlcovJxw&TL=ALbfvL3GWTEa2w2iyuy7BvHSxbt0CXuXj10ZJHYscZdRnt5d8cib3n0Hv-4b0HcT&flowName=GlifWebSignIn&cid=5&flowEntry=ServiceLogin" target="_blank"><img src="/images/modal/google.png" alt="google"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <input name="login" class="input-modal" type="text" placeholder="yourmail@gmail.com">
+                        <input name="password" class="input-modal" type="password" placeholder="password">           
+                    </div>
+                    <div>
+                    </div>
+                    <div class="remember-btn">
+                        <input type="checkbox"><p>Remember me</p>
+                    </div>
+                    <div class="btn-reg">
+                        <button id="btn-reg">Create account?</button>
+                    </div>
+                    <div id="input-send" class="send" >
+
+                        <button type="submit" class="send-btn">Enter</button> 
+                    </div>
+                </form>
+            </div>
+            <div id="back-drop-reg" class="back-drop-reg">
+                <form  id="open_reg">
+                    <div>
+                        <span id="close-reg" >&times;</span>
+                    </div>
+                    <h2>Registration</h2>
+                    <div class="modal-social">
+                        <div class="apple-btn">
+                            <a href="https://appleid.apple.com/sign-in" target="_blank" ><img src="/images/modal/apple.png" alt="apple"></a>
+                        </div>
+                        <div class="facebook-btn">
+                            <a href="https://www.facebook.com/?stype=lo&jlou=AffqjN8zibautmEih8c7gOmcIL6qD1_c88zynLXJ-zERrkOU9uQXAxSzr58AWi9QUWYBgUTypr1mne8zkir4kn5ezqlBk07DjdvzQU0xj6HQlw&smuh=62990&lh=Ac_63Hn-Wcxfbu3YZzU" target="_blank"><img src="/images/modal/facebook.png" alt="facebook"></a>
+                        </div>
+                        <div class="google-btn">
+                            <a href="https://accounts.google.com/signin/v2/challenge/pwd?continue=https%3A%2F%2Fmyaccount.google.com%2Fdeleteaccount&service=accountsettings&osid=1&rart=ANgoxccv1bE4c8AZo2-4Lxa4titJrIseXSYzOxJ0zChhmYWV-tChz_hflWQ5lwHVuUYnPP3zF9RtmwPAL_fWjA-3DNRlcovJxw&TL=ALbfvL3GWTEa2w2iyuy7BvHSxbt0CXuXj10ZJHYscZdRnt5d8cib3n0Hv-4b0HcT&flowName=GlifWebSignIn&cid=5&flowEntry=ServiceLogin" target="_blank"><img src="/images/modal/google.png" alt="google"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="input-modal-reg" type="text" placeholder="yourmail@gmail.com">
+                        <input class="input-modal-reg" type="password" placeholder="password">  
+                        <input class="input-modal-reg" type="password" placeholder="repeat password">  
+                    </div>
+                    <div id="input-send" >
+
+                        <button class="send-btn">Enter</button> 
+                    </div>
+                </form>
+            </div>
+          </nav>
+        </header>
+        <div class="hero-container">
+          <div class="hero-desc">
+            <img src="/images/first screen/Ellipse 4.png" alt="" />
+            <h2>we care about your health</h2>
+            <p>
+              check now your healty with our profesional doctor, completed and
+              modern fasilities services
+            </p>
+            <button class="btn-hero">Check Now</button>
+          </div>
+          <div class="hero-img">
+            <span></span>
+            <img src="/images/first screen/doctor.png" alt="doctor" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Our-Services">
+      <div class="container">
+        <h4 class="text-info">Our Services</h4>
+        <h2 class="step-text">4 step easy we care your health</h2>
+        <div class="row">
+          <div class="row-container">
+            <img src="/images/second screen/healthcare 1.png" alt="" />
+            <h3>Date</h3>
+            <p>choose what date to check</p>
+          </div>
+          <div class="row-container">
+            <img src="/images/second screen/healthcare 2.png" alt="" />
+            <h3>Poly</h3>
+            <p>choose what Poly to check</p>
+          </div>
+          <div class="row-container">
+            <img src="/images/second screen/doctor 2.png" alt="" />
+            <h3>Doctor</h3>
+            <p>And choose doctor to check</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-screen">
+      <div class="container">
+        <div class="about">
+          <div class="img-about">
+            <img class="doctor-img" src="/images/third/third.png" alt="" />
+          </div>
+          <div class="about-text">
+            <h6>About Us</h6>
+            <h3>we help your health</h3>
+            <p>
+              This profile describes the activities of health services and
+              medical support as well as the facilities and conditions of the
+              General Hospital which is reflected in the general public served
+              from all groups, religions and beliefs, ethnicity and the level
+              and frequency of bed occupancy which continues to increase
+              significantly.
+            </p>
+            <button>more about us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="our-doctors">
+      <div class="container">
+        <div class="doctors">
+          <h6>Our Doctors</h6>
+          <h3>visit our professional specialists</h3>
+          </div>
+          <div class="row-card">
+            <div class="card">
+              <img src="/images/fifth/linkedin-sales-solutions-pAtA8xe_iVM-unsplash 1.png" alt="">
+              <div class="card-text">
+                  <div class="card-social">
+                    <img src="/images/fifth/ant-design_dribbble-outlined.png" alt="">
+                    <img src="/images/fifth/Vector.png" alt="">
+                    <img src="/images/fifth/Vector-1.png" alt="">
+                    <img src="/images/fifth/Vector-2.png" alt="">
+                  </div>
+                  <p class="doc">dr. Moeharman, Sp. THT.KL</p>
+                  <p class="doc-text" >Orthodontist </p>
+                </div>
+            </div>
+            <div class="card">
+              <img src="/images/fifth/steward-masweneng-uIvjLq_q5g8-unsplash 1.png" alt="">
+              <div class="card-text">
+                <div class="card-social">
+                  <img src="/images/fifth/ant-design_dribbble-outlined.png" alt="">
+                  <img src="/images/fifth/Vector.png" alt="">
+                  <img src="/images/fifth/Vector-1.png" alt="">
+                  <img src="/images/fifth/Vector-2.png" alt="">
+                </div>
+                <p class="doc">ANTONIUS JANSEN</p>
+                <p class="doc-text">Pediatric </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/images/fifth/christina-wocintechchat-com-SJvDxw0azqw-unsplash.png" alt="">
+            <div class="card-text">
+              <div class="card-social">
+                <img src="/images/fifth/ant-design_dribbble-outlined.png" alt="">
+                <img src="/images/fifth/Vector.png" alt="">
+                <img src="/images/fifth/Vector-1.png" alt="">
+                <img src="/images/fifth/Vector-2.png" alt="">
+              </div>
+              <p class="doc">dr. NADYA NAVIRA</p>
+              <p class="doc-text">Dentist  </p>
+            </div>
+            </div>
+            <div class="card">
+              <img src="/images/fifth/usman-yousaf-tPxS-1IPZAo-unsplash.png" alt="">
+              <div class="card-text">
+                <div class="card-social">
+                  <img src="/images/fifth/ant-design_dribbble-outlined.png" alt="">
+                  <img src="/images/fifth/Vector.png" alt="">
+                  <img src="/images/fifth/Vector-1.png" alt="">
+                  <img src="/images/fifth/Vector-2.png" alt="">
+                </div>
+                <p class="doc">MUHAMMAD ALI SYAHPUTRA</p>
+                <p class="doc-text">Dentist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials">
+      <div class="container">
+        <div class="testimonials-text">
+          <h6>Testimonials</h6>
+          <h3>what they say after visiting our hospital</h3>
+        </div>
+        <div class="row-card">
+          <div class="card-testimonials">
+            <img src="/images/sixth/nathan-anderson-GM5Yn5XRVqA-unsplash 1.png" alt="">
+            <div class="testimonials-text-card">
+              <p class="name-doc">John doe</p>
+              <p class="about-disease">The service I felt was very good, the staff and doctors were friendly and provided very clear information.</p>
+            </div>
+          </div>
+          <div class="card-testimonials">
+            <img src="/images/sixth/alexander-dummer-UH-xs-FizTk-unsplash 1.png" alt="">
+            <div class="testimonials-text-card">
+              <p class="name-doc">John doe</p>
+              <p class="about-disease">The service I felt was very good, the staff and doctors were friendly and provided very clear information.</p>
+            </div>
+          </div>
+        </div>
+        <button class="more">Learn more</button>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="container">
+        <div class="contact-text">
+          <div class="text-contact-us">
+            <h3>Let's consult your health with our doctor</h3>
+            <p>we will provide the best service.</p>
+            <button id="myBtn-contact">Contact us</button>
+          </div>
+          <div class="hidden">
+            <div id="back-drop-contact" class="back-drop-contact">
+              <form id="open_form_contact">
+                <div>
+                  <span id="close-contact" class="close-contact">&times;</span>
+                </div>
+                <h2>fill the form to order a call </h2>
+                <div>
+                  <input class="input-modal" type="number" placeholder="number">
+                  <input class="input-modal" type="text" placeholder="name and surname">
+                </div>
+                <div class="send-call">
+                  <button class="send-call-btn" >send call</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="container">
+        <footer>
+          <div class="part-first">
+            <p class="main-p" ><span>Hos</span>pital.</p>
+            <p class="footer-text">Our hospital tries to answer the challenges in the community's need for quality dental health services but still affordable by a wide audience.</p>
+            <div class="social-footer">
+              <img class="social" src="/images/footer/twiter.png" alt="">
+              <img class="social" src="/images/footer/instagram.png" alt="">
+              <img class="social" src="/images/footer/in.png" alt="">
+              <img class="social" src="/images/footer/youtube.png" alt="">
+              <img class="social" src="/images/footer/watc.png" alt="">
+              <img class="social" src="/images/footer/behance.png" alt="">
+            </div>
+          </div>
+          <div class="list">
+            <h6>Menus</h6>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">home</a></li>
+              <li><a href="#">Service</a></li>
+            </ul>
+          </div>
+          <div class="get">
+            <h6>Get Medical Checkup Voucher</h6>
+            <input type="email" placeholder="enter your email">
+            <div class="subscribe">
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
